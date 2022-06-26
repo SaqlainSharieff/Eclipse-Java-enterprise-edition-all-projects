@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="quest" class="com.cg.SecondQuestion.Question">
+    <property name = "questionId" value = "1"></property>
+    <property name = "question" value = " what is your favotite dish"></property>
+    <property name = "listAns">
+    	<list>
+    		<value>"cold drink"</value>
+    		<value>"rasgulla"</value>
+    		<value>"cake"</value>
+    		<value>"ice cream"</value>
+    	</list>
+    </property>
+    
+    <property name = "setAns">
+    	<set>
+    		<value>"chicken biryani"</value>
+    		<value>"kabab"</value>
+    		<value>"fried chicken"</value>
+    		<value>"chicken gravy"</value>
+    	</set>
+    </property>
+    
+    <property name = "mapAns">
+    	<map>
+    		<entry key="1" value = "pineapple"/>
+    		<entry key="2" value = "orange"/>
+    		<entry key="3" value = "apple"/>
+    		<entry key="4" value = "grapes"/>
+    		
+    	</map>
+    </property>
+    </bean>
+  
+</beans>
